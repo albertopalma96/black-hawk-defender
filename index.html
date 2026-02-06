@@ -301,4 +301,8 @@ self.addEventListener('install', e => {
 self.addEventListener('fetch', e => {
   e.respondWith(
     caches.match(e.request).then(r => r || fetch(e.request))
+spawnSmoke(2, -10);
+spawnSmoke(-4, -18);
+spawnSmoke(6, -25);
+
 Add index.html to root
